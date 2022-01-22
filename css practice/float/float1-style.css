@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+
+}
+
+body{
+    height:100vh;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: -0.02em;
+    background-color:black;
+}
+
+a {
+    font-size: 18px;
+    line-height: 20px;
+    color: #8492a6;
+    text-decoration: none;
+  }
+
+ul{
+    list-style-type:none;
+    padding-left:0;
+
+
+}
+
+.tab-menu {
+    border-bottom:1px solid #E5EAEF;
+    background-color: white;
+    max-width:540px;
+}
+.tab-menu::after {
+    content:"";   /*가상요소안에 content요소 무조건*/
+    display:block; /*clear를 사용하기 위해서는 반드시 display가 block*/
+    clear:left;   /*float:left되었기 때문*/
+    
+}
+.tab-menu-item {
+    float:left;
+    margin-right:16px;
+}
+
+.tab-menu-item a {
+    display:block;  /*inline요소는 padding값 사용이 안되므로*/
+    padding:16px 20px;  /*타겟영역을 넓히기 위해 a태그에 padding*/
+}
+
+.tab-menu-item.active {
+    border-bottom: 2px solid #2860e1;
+}
+.tab-menu-item.active a {
+    color:#2860E1;
+    font-weight:500;
+
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feed</title>
+    <link rel="stylesheet" href="css/feed.css">
+</head>
+<body>
+   <div class="feed">
+    <div class="feed-user-profile">
+        <a href="#">  <!--a태그 사용 할때 href꼭!!-->
+            <img src="eeoma.jpg" alt="Profile">
+        </a>
+        <div>  <!--스타일적인 요소 때문에-->
+            <h1>
+                <a href="#">
+                    eeoma
+                </a>
+            </h1>
+            <span aria-label="Posted 30 minutes ago">30 min</span>
+        </div>
+        <button type="button">
+            Follow
+        </button>
+    </div>
+    <div class="feed-content">
+        <p>The most beautiful experience we can have is the 
+            mysterious. It is the fundamental emotion that stands at 
+            the cradle of true art and true science. — Albert Einstein</p>
+    </div>
+    <div class="feed-footer">
+        <button type="button">10 Likes</button>
+        <button type="button">0 Comments</button>
+    </div>
+    <div>
+        <form action="" method="POST" class="feed-comment">  <!--정보를 입력받기때문에 form 사용-->
+        <textarea placeholder="Write a comment">
+        </textarea>  <!--긴 글을 입력받을때는 textarea사용-->
+        <button type="submit">
+            Submit
+        </button>
+       </form>
+       <script src="app.js"></script>
+    </div>
+   </div>
+
+</body>
+</html>

@@ -1,0 +1,152 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sr-only{
+    /*display: none;을 사용하면 sr로도 읽을 수 없음*/
+    position: absolute;
+    z-index: -100;
+    width: 1px;
+    height: 1px;  /*밑으로 위치시킨 후 크기를 줄임*/
+    overflow: hidden;
+    opacity: 0;
+}
+
+.like-button {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+.card {
+    display: flex;  
+    /*가로정렬, 한줄에 배치, 정렬이 모두 flex start이기 때문에 과정을 생략함*/
+    width: 840px;
+    padding: 24px;
+}
+
+.card-image {
+    position: relative;  /*버튼의 기준점이 되기 위해 */
+    width: 300px;
+    height: 200px;
+    background-image: url('../assets/img-house.jpg');
+    background-repeat:no-repeat;
+    background-position: center center;  /* x축에 대한 정보 , y 축에 대한 정보 */
+    background-size: cover;
+    overflow: hidden;   /* 크기에서 넘어가는 부분은 보이지 않게 */
+    border-radius: 6px;
+    margin-right: 24px;
+
+}
+
+.card-image img {
+    width: 100%;
+    height: auto;
+}
+
+.card-image button {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: none;
+    background-color: #fff;
+    background-image: url('../assets/icon-favorite.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 24px 24px;
+    cursor: pointer;
+}
+
+.card-content {
+    flex-grow:1;  /*content의 남아있는 공간도 차지할 수 있도록 */
+}
+
+.card-header {
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom: 10px;
+}
+
+
+.plus-badge {
+    display: inline-block;  /*가로로 흐르는 inline의 성질도 갖고 size조절이 가능한 block 의 설질도 갖게됨 */
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.4285714286;   /*20/14해준 값*/
+    background-color: #92174D;
+    padding: 1px 8px;
+    border-radius: 4px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.property-type span {
+    font-size: 16px;
+    line-height:1.25;
+    color: #7D858F;
+    margin-left: 6px;
+}
+
+.property-rate {
+    font-size: 16px;
+    line-height: 1.25;
+}
+
+.property-rate strong {
+    color: #151B26;
+    font-weight: 400;
+
+}
+
+.property-rate span {
+    color: #7D858F;
+
+}
+
+.property-rate::before {  /*정보의 의미가 없는 별모양을 넣어주기 위해 가상의 공간을 만들어줌 */
+    display: inline-block;
+    position: relative;  /*자신이 원래 있던 위치를 기억*/
+    top: 2px;
+    content: '';   /*가상요소를 만들때 필수 요소*/
+    width: 16px;
+    height: 16px;
+    background-image: url('../assets/icon-star.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+
+}
+
+.card-title {
+    font-size: 20px;
+    line-height: 1.6px;
+    font-weight: 400;
+    color: #151B26;
+    margin-bottom: 16px;
+}
+
+.property-detail {
+    font-size: 14px;
+    line-height: 1.142857;
+    color: #7D858F;
+    font-weight: 400;
+}
+
+
+.property-detail dd span::after{
+    content:'·';
+    margin: 0 8px;
+}
+
+.property-detail dd span:last-child::after {   /*가장 마지막 요소의 가상요소 */
+    content: '';
+    margin: 0;
+}
+
+.property-detail div:first-child {
+    margin-bottom: 8px;
+}

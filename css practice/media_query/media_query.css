@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  body {
+    font-family: "Noto Sans KR", sans-serif;
+    letter-spacing: -0.01em;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .landing {
+    background-color:#B18904;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width:100%;
+    height:100vh;   /*배경 꽉차게*/
+    padding: 0 20px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;  /*축에 대한 정렬*/
+    align-items:flex-end;  /*오른쪽 끝에 배치*/
+
+
+  }
+  
+  .landing-title {
+    line-height: 1.25;
+    letter-spacing: -0.03em;
+    color: #fff;
+    margin-bottom:24px;
+    text-align:right;  /*우측정렬*/
+  }
+  
+  .landing-title strong {
+    display: block;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: -0.01em;
+  }
+  
+  .landing-link {
+    display:flex;
+    justify-content:center;  
+    align-items:center; 
+    line-height: 1;
+    color: #fff;
+    width:160px;
+    height: 52px;
+    font-size:15px;
+    background-color:rgba(0,0,0,0.5);  /*앞에 0,0,0 => 검정색의미 , 0.5 => 투명도의미 */
+    border-radius:16px;
+    border:2px solid #fff;
+  }
+  
+  .banner-title a {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color: #1f2d3d;
+    font-size:18px;
+    width:100%;
+    height:64px;  /*글자를 정가운데 배치하기 위해서 배너만큼 height값을 줘야함*/
+  }
+
+  .banner{
+      position:fixed;  /*view port기준, bottom/top과 left/right요소들 중 한개씩만 사용*/
+      bottom:0;
+      left:0;
+      width:100%;
+      height: 64px;
+      background-color:#FFC82C;
+  }
+  
+
+  @media screen and (min-width:768px){    /*768px이상일때 적용되는 스타일*/
+      .banner{
+          position:fixed;
+          bottom:auto;  /*이전에 선언했던 값을 없애줘야함 */
+          top:0;
+          height:80px;
+      }
+
+      .banner-title a {
+           height: 80px;
+      }
+    
+      .landing{
+          align-items:center;
+      }
+      
+      .landing-title {
+        text-align:center;
+        font-size:30px;
+        margin-bottom: 32px;
+        
+      }
+
+      .landing-link {
+          font-size:18px;
+          width:180px;
+          height:56px;
+      }
+  }

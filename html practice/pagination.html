@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breadcrump &amp; Pagination</title>
+    <link rel="stylesheet" href="./pagination.css">
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://github.com/eeoma" target="_blank" aria-label="go to eeoma profile page">eeoma</a>
+        <a href="https://github.com/eeoma/HTML-CSS" target="blank" aria-label="go to html-css page">HTML-CSS</a>
+    </div>
+   <div class="pagination">
+    <a href="#" aria-label="Go to previous page" class="disabled">Previous</a>  <!--aria-lable: 접근성을 높혀줌-->
+    <ol>
+        <li class="current-page"> 
+            <a href="#" aria-label="Current page.Go to page 1">1</a>
+        </li>
+        <li>
+            <a href="#" aria-label="Go to page 2">2</a>
+        </li>
+        <li>
+            <a href="#" aria-label="Go to page 3">3</a>
+        </li>
+        <li>
+            <a href="#" aria-lable="Go to page 4">4</a>
+        </li>
+        <li>
+            <a href="#" aria-label="Go to page 5">5</a>
+        </li>
+        <li>
+            <button type="button" disabled>  <!--사용할 수 없는 버튼-->
+             ...    
+            </button>
+        </li>
+        <li>
+            <a href="#" aria-label="Go to page 6">6</a>
+        </li>
+        <li>
+            <a href="#" aria-label="Go to page 7">7</a>
+        </li>
+        <li>
+            <a href="#" aria-label="Go to page 8">8</a>
+        </li>
+        <li>
+            <a href="#" aria-label="Go to page 9">9</a>
+        </li>
+    </ol>
+    <a href="#" aria-label="Go to next page">Next</a>
+   </div>
+</body>
+</html>

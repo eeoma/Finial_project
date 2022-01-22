@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Dropdown Menu</title>
+    <link rel="stylesheet" href="css/dropdown.css">
+</head>
+<body>
+    <div class="dropdown">
+        <button type="button" aria-label="Open User Menu" class="dropdown-button">
+            <img src="https://user-images.githubusercontent.com/19285811/69063907-43da4800-0a58-11ea-8efb-4b57dca4e3fe.png" alt="rohjs"/>  
+        </button>
+        <div class="dropdown-menu">
+            <h3>
+                <a href="#">Signed in as <strong>rohjs</strong></a>
+                <!--클릭하면 링크로써 작동하기 때문에 a태그로 감싸줘야함-->
+            </h3>
+            <ul>  <!--ul의 직계자식으로는 li태그나 div태그밖에 오지 못하므로 a태그를 li태그 안에 해줌-->
+                <li><a href="#">Your profile</a></li>
+                <li><a href="#">Your repositories</a></li>
+                <li><a href="#">Your projects</a></li>
+                <li><a href="#">Your stars</a></li>
+                <li><a href="#">Your gits</a></li>
+            </ul>
+            <ul>  <!--ul의 직계자식으로는 li태그나 div태그밖에 오지 못하므로 a태그를 li태그 안에 해줌-->
+                <li><a href="#">Feature previes</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Sign on</a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

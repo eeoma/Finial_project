@@ -1,0 +1,25 @@
+<form action="" method="GET">  
+    <!--GET방식으로 제출하면 URL이 바뀜, 서버에 정보가 전송됨-->
+    <input type="radio" name="subscription" value="subscribed" id="subscribed"/>
+    <!--서버에 정보가 전송되므로 같은 name을 갖는 것들이 다른 value를 갖게 해야함-->
+    <label for="subscribe">구독중</label>
+    <input type="radio" name="subscription" value="unsubscribed" id="unsubscribed"/>
+    <label for="unsubscribed">미구독</label>
+    <button type="submit">
+        SUBMIT
+    </button>
+</form>
+
+<h1>사용 가능 언어</h1>
+<form>
+    <input type="checkbox" name="languages" value="1" id="html"/>
+    <label for="html">HTML</label>
+    <input type="checkbox" name="languages" value="2" id="css"/>
+    <label for="css">CSS</label>
+    <input type="checkbox" name="languages" value="3" id="javascript"/>
+    <label for="javascript">JAVASCRIPT</label>
+    <button type="submit">
+        SUBMIT
+    </button>
+
+</form>

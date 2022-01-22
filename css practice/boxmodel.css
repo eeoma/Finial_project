@@ -1,0 +1,22 @@
+*{  /*전체 요소를 의미*/
+    box-sizing:border-box;  /*content박스 만의 sizing이 아닌 전체적인 sizing이 됨*/
+    margin:0;
+}
+
+.box{
+    width:130px;
+    height:40px;
+    padding-top:10px;
+    padding-left:20px;
+    border-radius: 117%;
+    background-color: red;
+    color: #000;  /*글자색*/
+    text-align: center;
+
+}
+
+.box:hover {
+    box-shadow:0 10px 16px 0 rgba(255,73,73,0.36);
+    transition: box-shadow 250ms ease-in;  /*처음에는 천천히, 점점 빨라짐 */ 
+
+}

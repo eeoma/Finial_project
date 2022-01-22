@@ -1,0 +1,68 @@
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">>
+  <title>TABLE연습</title>
+  <link rel="stylesheet" href="./tablestyle.css">
+</head>
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th></th>
+        <th scope="col">월</th>  <!--scope를 이용해 th의 성격을 명확하게-->
+        <th scope="col">화</th>
+        <th scope="col">수</th>
+        <th scope="col">목</th>
+        <th scope="col">금</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <th scope="row">1교시</th>  <!--데이터들 중에서 헤더의 내용-->
+        <td rowspan="2">국어 &amp; 수학</td>   <!--rowspan: 열의 셀병합-->
+        <td>영어</td>
+        <td rowspan="2">국어 &amp; 수학</td> 
+        <td>영어</td>
+        <td rowspan="2">국어 &amp; 수학</td> 
+      </tr>
+      <tr>
+        <th scope="row">2교시</th> <!--윗줄에서 2칸의 셀병합이 있으므로 병합된건 작성x-->
+        <!--<td>국어 &amp; 수학</td>-->
+        <td rowspan="2">컴퓨터</td>  
+        <!--<td>국어 &amp; 수학</td>-->
+        <td>체육</td>
+      </tr>
+      <tr>
+        <th scope="row">3교시</th>
+        <td>미술</td>
+        <td>과학</td>
+        <!--<td>컴퓨터</td>-->
+        <td>수학</td>
+        <td>사회</td>
+      </tr>
+      <tr>
+        <th scope >12:00</th>
+        <td colspan="5">점심시간</td> <!--colspan: 행의 셀병합-->
+      </tr>
+      <tr>
+        <th>4교시</th>
+        <td>한국사</td>
+        <td rowspan="2">국어</td>
+        <td rowspan="2">미술</td>
+        <td rowspan="2">국어</td>
+        <td rowspan>과학</td>
+      </tr>
+      <tr>
+        <th>5교시</th>
+        <td>음악</td>
+        <!--<td rowspan="2">국어</td>-->
+        <!--<td rowspan="2">미술</td>-->
+        <!--<td rowspan="2">국어</td>-->
+        <td rowspan="2">영어</td>
+      </tr>
+    </tbody>
+  </table>
+  
+</body>
+</html>

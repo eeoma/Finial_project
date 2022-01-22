@@ -1,0 +1,344 @@
+<!DOCTYPE html>  <!--느낌표 + tab-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter Markup Challenge</title>
+</head>
+<body>
+    <header>  <!--문서의 도입부-->
+        <h1> 
+            <a href="#">
+                <img src="#" alt="twitter"/>
+            </a>
+        </h1>
+        <nav>  <!--문서간에 이동할 수 있는 메뉴가 있는 경우 사용하는 태그, 안에 H태그가 꼭 들어가야함-->
+            <h1>
+                Global Navation Menu
+            </h1>
+            <ul>
+                <li> 
+                    <a href="#">
+                    <span>Current page</span> Home </a>
+                </li>
+                <li> 
+                    <a href="#">
+                    <strong aria-label="5 unread notifications">5</strong> Notifications </a>
+                </li>
+                <li> 
+                    <a href="#"> Explore </a>
+                </li>
+                <li> 
+                    <a href="#"> Message </a>
+                </li>
+                <li> 
+                    <a href="#"> Bookmarks </a>
+                </li>
+                <li> 
+                    <a href="#"> Lists </a>
+                </li>
+                <li> 
+                    <a href="#"> Profiles </a>
+                </li>
+                <li> 
+                    <button type="button"> More </button>
+                    <!--dropdown menu-->
+                </li>
+            </ul>
+            <button type="button">
+                Tweet
+            </button>
+        </nav>
+    </header>
+    <main>  <!--하나의 html문서에서는 단 한개의 main태그 사용 가능-->
+        <!--main태그는 section, article, nav등의 태그 안에 사용할 수 없음 -->
+        <!--안에 h태그를 반드시 사용할 필요는 없음-->
+            <header> <!--main태그 안에서도 도입부의 역할을 하기 때문-->
+                <h1>Home</h1>
+                <button type="button" aria-label="Timeline options">
+                    <!--Icon-->
+                </button>
+                <div>
+                    <h2>Home shows you yop Tweets first</h2>
+                    <button type="button">
+                        <!--Icon-->
+                        <strong>See latest Tweets instead</strong>
+                        <span>You'll be switched back Home after 
+                            you've been away for a while.
+                        </span>
+                    </button>
+                    <a href="#">
+                        <!--Icon-->
+                        View content preferences
+                    </a>
+                </div>
+            </header>
+            <section>  <!--section태그 안에도 h태그가 들어가야함-->
+                <h1>What's happening?</h1>
+                <form action="" method="POST">
+                    <!--작성하는 양이 많을때 method를 get이 아닌 post-->
+                    <img src="#" alt="@eeoma"/>
+                    <textarea placeholder="What's happening?" maxlength="280"></textarea>
+                    <button type="button" aria-label="Upload files">
+                        <!--Icon-->
+                    </button>
+                    <input type="file" multiple acccept="image/*, video/*"/>  <!--file첨부 가능 기능-->
+                    <!--multiple기능: 여러가지 파일을 올릴 수 있음-->
+                    <!--accept기능: 첨부 가능한 파일 제한-->
+                    <!--image/*: 이미지파일 모두 허용, vide0/*: 비디오파일 모두 허용-->
+                    <button type="button" aria-label="Search GIFs">
+                        <!--Icon-->
+                    </button>
+                    <button type="button" aria-label="Create a poll">
+                        <!--Icon-->
+                    </button>
+                    <button type="button" aria-label="Choose emoji">
+                        <!--Icon-->
+                    </button>
+                    <strong aria-label="0 out of a 280 characters"></strong>
+                    <button type="button" aria-label="add another tweet"></button>
+                    <button type="submit">Tweet</button>
+            
+                </form>
+            </section>
+            <section>
+                <h1>Your Timeline</h1>
+                <ol>
+                    <li>
+                        <!--tweet-->
+                    </li>
+                    <li>
+                        <!--tweet-->
+                    </li>
+                </ol>
+            </section> 
+            <article>   <!--h태그 필수-->
+                <h1>A Tweet from 김익명</h1>
+                <header>
+                    <a href="#">
+                        <img src="#" alt="김익명"/>
+                    </a>
+                    <h2>
+                        <a href="#">김익명</a>
+                    </h2>
+                    <dl>
+                       <div>
+                           <dt>Username</dt>
+                           <dd>
+                                <a href="#">
+                                    @anonymouskim
+                                </a>
+                           </dd>
+                       </div> 
+                       <div>
+                            <dt>Posted</dt>
+                            <dd>
+                                <a href="#">
+                                    Dec 25
+                                </a>
+                            </dd>
+                        </div> 
+                    </dl>
+                    <button type="button" aria-label="Options">
+                        <!--Icon-->
+                    </button>
+                    <div>
+                        <button type="button"> Show less often</button>
+                        <button type="button">  Embed Tweet</button>
+                        <button type="button">  Unfollow @anonymouskim</button>
+                        <button type="button">  Mute @anonymouskim</button>
+                        <button type="button">  Block @anonymouskim</button>
+                        <button type="button">  Report Tweet</button>     
+                
+                    </div>
+                </header>
+                <p>
+                    영어를 더 잘 하고싶다. 그러나 공부를 하고 싶지는 않다. 내 삶의 모든 것이 이런 식으로 망해왔다 
+                </p>
+                <footer>  <!--하단부의 의미-->
+                    <button type="button">
+                        <span class="sr-only">Tweet your reply</span>
+                        <strong aria-label="3 replied">3</strong>
+                    </button>
+                    <button type="button">
+                         <span class="sr-only">Retweet</span>
+                         <strong aria-label="3 retweeted">3</strong>
+                    </button>
+                    <div>  <!--위 버튼을 눌렀을때 보이는 dropdown메뉴-->
+                        <button type="button">
+                            Retweet
+                        </button>
+                        <button type="button">
+                            Retweet with comment
+                        </button>
+                    </div>
+                    <button type="button">
+                        <span class="sr-only">Like thie tweet</span>
+                        <strong aria-label="100 liked">100</strong>
+                    </button>
+                    <button type="button">
+                        <span class="sr-only">Share</span>
+                    </button>
+                    <div>  <!--위 버튼을 눌렀을때 보이는 dropdown메뉴-->
+                        <button type="button">
+                            Send via Direct Message
+                        </button>
+                        <button type="button">
+                            Add Tweet to Bookmarks
+                        </button>
+                        <button type="button">
+                            Copy link to Tweet
+                        </button>
+                    </div>
+                </footer>
+            
+            </article>
+                
+        </main>
+        <aside>  <!--h태그 무조건 필요-->
+            <!--section태그와 비슷한 뉘앙스이지만 본문내용과는 관련성이 없는 위젯/ 배너와 같은  -->
+            <header>
+                <h1>Worldwide trends</h1>
+                <button type="button" aria-label="Options">
+                    <!--Icon-->
+                </button>
+            </header>
+            <ol>
+                <li>
+                    <button type="button" aria-label="Options">
+                        <!--Icon-->
+                    </button>
+                    <div>  <!--위 버튼 눌렀을때 나오는 dropdown menu-->
+                        <button type="button">
+                            <!--Icon-->
+                            This trend is spam
+                        </button>
+                        <button type="button">
+                            <!--Icon-->
+                            This trend is abusive or harmful
+                        </button>
+                    </div>
+                    <a href="#">
+                        <span>1 . Trending worldwide</span>
+                        <strong>#eeoma</strong>
+                        <span>100k Tweets</span>
+                    </a> 
+                </li>
+                <li>
+                    <button type="button" aria-label="Options">
+                        <!--Icon-->
+                    </button>
+                    <div>  <!--위 버튼 눌렀을때 나오는 dropdown menu-->
+                        <button type="button">
+                            <!--Icon-->
+                            This trend is spam
+                        </button>
+                        <button type="button">
+                            <!--Icon-->
+                            This trend is abusive or harmful
+                        </button>
+                    </div>
+                    <a href="#">
+                        <span>2 . Trending worldwide</span>
+                        <strong>#BTS</strong>
+                        <span>95k Tweets</span>
+                    </a> 
+                </li>
+                <li>
+                    <button type="button" aria-label="Options">
+                        <!--Icon-->
+                    </button>
+                    <div>  <!--위 버튼 눌렀을때 나오는 dropdown menu-->
+                        <button type="button">
+                            <!--Icon-->
+                            This trend is spam
+                        </button>
+                        <button type="button">
+                            <!--Icon-->
+                            This trend is abusive or harmful
+                        </button>
+                    </div>
+                    <a href="#">
+                        <span>3 . Trending worldwide</span>
+                        <strong>#TWICE</strong>
+                        <span>90k Tweets</span>
+                    </a> 
+                </li>
+                <li>
+                    <button type="button" aria-label="Options">
+                        <!--Icon-->
+                    </button>
+                    <div>  <!--위 버튼 눌렀을때 나오는 dropdown menu-->
+                        <button type="button">
+                            <!--Icon-->
+                            This trend is spam
+                        </button>
+                        <button type="button">
+                            <!--Icon-->
+                            This trend is abusive or harmful
+                        </button>
+                    </div>
+                    <a href="#">
+                        <span>4 . Trending worldwide</span>
+                        <strong>#mikey</strong>
+                        <span>80k Tweets</span>
+                    </a> 
+                </li>
+                <li>
+                    <button type="button" aria-label="Options">
+                        <!--Icon-->
+                    </button>
+                    <div>  <!--위 버튼 눌렀을때 나오는 dropdown menu-->
+                        <button type="button">
+                            <!--Icon-->
+                            This trend is spam
+                        </button>
+                        <button type="button">
+                            <!--Icon-->
+                            This trend is abusive or harmful
+                        </button>
+                    </div>
+                    <a href="#">
+                        <span>5 . Trending worldwide</span>
+                        <strong>#KOREA</strong>
+                        <span>76k Tweets</span>
+                    </a> 
+                </li>
+            </ol>
+            <footer>
+                <button type="button">
+                    Show more
+                </button>
+            </footer>
+        </aside>
+        <footer>
+            <a href="#" target="_blank">
+                Terms
+            </a>
+            <a href="#" target="_blank">
+                Privacy policy
+            </a>
+            <a href="#" target="_blank">
+                Cookies
+            </a>
+            <a href="#" target="_blank">
+                Ads info
+            </a>
+            <button type="button">
+                More
+                <!--Icon-->
+            </button>
+            <div>
+                <a href="#" target="_blank">About</a>
+                <a href="#" target="_blank">Status</a>
+                <a href="#" target="_blank">Businesses</a>
+                <a href="#" target="_blank">Developers</a>
+            </div>
+            <span>
+                © 2019 Twitter, Inc.
+            </span>
+        </footer>      
+        
+        
+</body>
+</html>
